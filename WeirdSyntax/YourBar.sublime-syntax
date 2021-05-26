@@ -1,0 +1,13 @@
+%YAML 1.2
+---
+name: YourBar
+scope: source.your-bar
+version: 2
+
+contexts:
+  main:
+    - match: ''
+      push: scope:source.my-foo
+      with_prototype:
+        - match: 'a#'
+          scope: constant.character

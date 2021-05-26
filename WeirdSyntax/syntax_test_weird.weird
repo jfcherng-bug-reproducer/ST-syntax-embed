@@ -1,0 +1,6 @@
+// SYNTAX TEST "Packages/WeirdSyntax/WeirdSyntax.sublime-syntax"
+
+    a##x
+//  ^^ constant.character
+//    ^ support.function
+//     ^ - keyword

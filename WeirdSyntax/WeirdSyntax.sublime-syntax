@@ -1,0 +1,17 @@
+%YAML 1.2
+---
+name: WeirdSyntax
+scope: source.weird
+version: 2
+file_extensions:
+  - weird
+
+contexts:
+  main:
+    - match: '//.*'
+      scope: comment
+    - match: ''
+      embed: scope:source.your-bar
+      escape: '#'
+      escape_captures:
+        0: support.function
